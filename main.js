@@ -4,7 +4,7 @@ const roleBuilder = require('role.builder');
 
 module.exports.loop = () => {
 
-    let tower = Game.getObjectById('16f1b00c6fdf2d29dc7250d5');
+    /*let tower = Game.getObjectById('16f1b00c6fdf2d29dc7250d5');
     for (let towerName in Game.towers) {
         let closestDamagedStructure = tower.pos.findClosestByRange(FIND_STRUCTURES, {
             filter: (structure) => structure.hits < structure.hitsMax
@@ -17,7 +17,7 @@ module.exports.loop = () => {
         if (closestHostile) {
             tower.attack(closestHostile);
         }
-    }
+    }*/
 
     for (let name in Game.creeps) {
         let creep = Game.creeps[name];
