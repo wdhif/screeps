@@ -31,4 +31,11 @@ module.exports.loop = () => {
             roleBuilder.run(creep);
         }
     }
+
+    let creepName = Math.random().toString();
+
+    Game.spawns['Spawn1'].spawnCreep([WORK, CARRY, MOVE], creepName, {
+        memory: {role: 'harvester'}
+    });
+    console.log('Spawned a new Harvester: ' + creepName)
 };
