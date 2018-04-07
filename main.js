@@ -1,6 +1,7 @@
 const roleHarvester = require('role.harvester');
 const roleUpgrader = require('role.upgrader');
 const roleBuilder = require('role.builder');
+const population = require('population');
 
 module.exports.loop = () => {
 
@@ -32,10 +33,5 @@ module.exports.loop = () => {
         }
     }
 
-    let creepName = Math.random().toString();
-
-    Game.spawns['Spawn1'].spawnCreep([WORK, CARRY, MOVE], creepName, {
-        memory: {role: 'harvester'}
-    });
-    console.log('Spawned a new Harvester: ' + creepName)
+    population.run()
 };
