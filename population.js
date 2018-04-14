@@ -16,7 +16,7 @@ let population = {
         for (let key in POPULATION) {
             let currentPopulation = _.sum(Game.creeps, (creep) => creep.memory.role === key);
             if (currentPopulation < POPULATION[key]) {
-                let creepName = Math.random().toString();
+                let creepName = `${key}#${Math.floor(1000 + Math.random() * 9000)}`;
 
                 let spawnHasEnoughEnergy = Game.spawns['Spawn1'].spawnCreep(ROLES[key], creepName, {dryRun: true});
 
