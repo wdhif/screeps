@@ -1,17 +1,18 @@
 const POPULATION = {
     'harvester': 10,
+    'courrier': 5,
     'builder': 3,
     'upgrader': 2
 };
 
 const ROLES = {
-    'harvester': [WORK, CARRY, MOVE, MOVE],
+    'harvester': [WORK, WORK, CARRY, MOVE],
+    'courrier': [CARRY, CARRY, MOVE, MOVE],
     'builder': [WORK, CARRY, MOVE, MOVE], // TODO Add correct body
     'upgrader': [WORK, CARRY, MOVE, MOVE], // TODO Add correct body
 };
 
 let population = {
-
     run: () => {
         for (let key in POPULATION) {
             let currentPopulation = _.sum(Game.creeps, (creep) => creep.memory.role === key);
