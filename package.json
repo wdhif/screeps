@@ -1,0 +1,19 @@
+{
+  "name": "screeps",
+  "version": "0.0.1",
+  "description": "An artificial intelligence for screeps",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdhif/screeps.git"
+  },
+  "author": "Wassim DHIF <wassimdhif@gmail.com> (https://github.com/wdhif)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wdhif/screeps/issues"
+  },
+  "homepage": "https://github.com/wdhif/screeps#readme"
+}
